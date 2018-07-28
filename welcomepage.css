@@ -1,0 +1,29 @@
+body {
+	background-color: lightgray;
+}
+
+
+/* left colum */
+.leftcolumn {
+	float: left;
+	width: 75%;
+
+}
+
+/* right colum*/
+.rightcolumn {
+	background-color: #a9a9a9;
+	float: right;
+	width: 14%;
+	padding-left: 20px; 
+	border: 5px solid red;
+}
+
+/* add a card effect for articles */
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+
