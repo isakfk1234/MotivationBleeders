@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+
+
+<img src="mainpage.jpg" style="width:100%">
+
+<div class="topnav">
+  <a  href="welcomepage.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="fanart/comingsoon.html">Fan art</a>
+  <a href="info/info.html">Info</a>
+  <a class="active" href="contact.html">Contact Staff</a>
+    
+</div>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">your discord name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your discord name">
+
+
+    <label for="country">contact motivation bleeders staff</label>
+    <select id="country" name="country">
+      <option value="Bearded_muscle">Bearded_muscle    (contact bearded about sponsor and things like that)</option>
+      <option value="server staff">server staff (contact server staff if discord server is down)</option>
+      <option value="usa">website staff (contact website staff for problem/bugs/things like that)</option>
+      <option value="motivation">motivation bleeders staff (contact Motivation bleeders staff Twitch moderator, discord moderator, and other)</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</body>
+</html>
