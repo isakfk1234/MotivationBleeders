@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="info.css">
+</head>
+<body>
+
+<img src="/beardedwebsite/mainpage.jpg" style="width:100%">
+
+<div class="topnav">
+  <a href="/beardedwebsite/welcomepage.html">Home</a>
+  <a href="/beardedwebsite/about.html">About</a>
+  <a href="/beardedwebsite/fanart/comingsoon.html">Fan art</a>
+  <a class="active" href="info.html">Info</a>
+  <a href="/beardedwebsite/contact.html">Contact Staff</a>
+    
+</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Stream')">Stream time</button>
+  <button class="tablinks" onclick="openCity(event, 'Pc')">Pc spec</button>
+  <button class="tablinks" onclick="openCity(event, 'Rules')">Rules</button>
+</div>
+
+<div id="Stream" class="tabcontent">
+  <h3>Stream time</h3>
+  <p>when the stream start...</p>
+  <img src="schedule.png">
+</div>
+
+<div id="Pc" class="tabcontent">
+  <h3>Pc spec</h3>
+  <p>Pc specs.....</p> 
+  <img src="pcspec.png">
+</div>
+
+<div id="Rules" class="tabcontent">
+  <h3>Rules</h3>
+  <p>Rules..... importment</p>
+  <img src="rules.png">
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+</body>
+</html>
