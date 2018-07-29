@@ -17,7 +17,8 @@ body {
 	width: 14%;
 	padding-left: 20px; 
 	margin-top: 24px;
-	border: 5px solid red;
+	border: 3px solid rgb(0, 236, 22);
+
 }
 
 /* add a card effect for articles */
