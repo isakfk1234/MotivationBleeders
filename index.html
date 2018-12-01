@@ -1,60 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome</title>
+    <title>closed</title>
 <link rel="stylesheet" type="text/css" href="nav.css">
-<link rel="stylesheet" type="text/css" href="welcomepage.css">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: lightblue;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
 </head>
 <body>
 
-<img src="beardedmainpage.jpeg" style="width:100%">
 
-<div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="https://isakfk1234.github.io/MotivationBleeders/fanart/comingsoon.html">Fan art</a>
-  <a href="info/info.html">Info</a>
-  <a href="contact.html">Contact Staff</a>  
-</div>
- 
-
-
-	
-<div class="rightcolumn">
-	<h3>Follow Me! on</h3>
-    <a href="https://www.twitch.tv/bearded_muscle">Twitch</a>
-    <p></p>
-    <a href="https://www.instagram.com/sandro_nani/">Instagram</a>
-    <p></p>
-    <a href="https://www.youtube.com/user/sandro150?">Youtube</a>
-	<p></p>
-	<a href="https://twitter.com/BeardedMuscle_">Twitter</a>
-	<p></p>
-	<a href="https://discordapp.com/invite/motivation">Discord Invite link</a>
+<div class="bgimg">
+  <div class="middle">
+    <h1>The website is closed because disapproved by the owner of Motivation Bleeders</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
 </div>
 
-<div class="textbox">
-  <h4>Hi on this website you can find information and nice fan art made by Bearded's fans (under work). if you have any problems or need help with something you can try contact staff (under work)
-  you can find some info about bearded_muscle or Motivation Bleeders </h4>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("jan 22, 2020 15:37:25").getTime();
 
-</div>
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
 
-
-<div class="infobox">
-  <h4>Click here to go to Bearded_muscle twitch channel</h4>
-  <form>
-<input class="button" type="button" value="Twitch" onclick="window.location.href='https://www.twitch.tv/bearded_muscle'" />
-</form>
-</div>
-
-
-<div class="infoboxa">
-  <h4>For more info go to Info page or click here</h4>
-  <form>
-<input class="button" type="button" value="Info" onclick="window.location.href='https://isakfk1234.github.io/MotivationBleeders/info/info.html'" />
-</form>
-</div>
-
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
 
 </body>
 </html>
